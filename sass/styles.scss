@@ -116,12 +116,13 @@ h1 {
         gap : 20px;
     }
     &Item3 {
-        width: 100%;
+        flex-basis: calc((100% - 20px) / 2);
+        //flex-grow: 1;
         @media screen and (min-width: 768px) {
-            width: calc((100% - 40px) / 3);
+            flex-basis: calc((100% - 40px) / 3);
         }
         @media screen and (min-width: 1200px) {
-            width: calc((100% - 40px) / 3);
+            flex-basis: calc((100% - 40px) / 3);
             //flex: 1;
         }
     }
@@ -138,16 +139,13 @@ h1 {
         gap : 20px;
     }
     &Item4 {
-        flex-basis: calc(50% - 20px); 
-        flex-grow: 1;
-        
+        flex-basis: calc((100% - 20px) / 2); 
+        //flex-grow: 1;
         @media screen and (min-width: 768px) {
-            width: calc(((100% - 40px) - 60px) / 4);
+            flex-basis: calc((100% - 60px) / 4);
             //flex: 1;
         }
-        @media screen and (min-width: 1200px) {
-            width: calc((100% - 60px) / 4);
-        }
+       
     }
     &List5 {
         width: 100%;
