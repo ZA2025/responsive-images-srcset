@@ -35,7 +35,7 @@ const albums = [
     // Album with 2 columns
     responsiveImgAttrs2(
         springArray.map(src => `placeholders/${src}`),
-        "(min-width: 1600px) 285px, (min-width: 1200px) calc((1200px - 40px) / 2), (min-width: 768px) calc(((768px - 40px) - 20px) / 2), calc(((100vw - 40px) - 20px) / 2)",
+        "(min-width: 1600px) 285px, (min-width: 1200px) calc((1200px - 20px) / 2), (min-width: 768px) calc(((768px - 40px) - 20px) / 2), calc(((100vw - 40px) - 20px) / 2)",
         [600, 800, 1200, 1600],
         800,
         "imageSpring",
