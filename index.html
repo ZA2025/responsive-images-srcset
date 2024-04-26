@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Images</title>
-    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+    <!-- Preload critical images -->
+    <link rel="preload" href="./placeholders/extralarge.jpg" as="image">
+    <link rel="preload" href="./placeholders/large.jpg" as="image">
+    <link rel="preload" href="./placeholders/medium.jpg" as="image">
+    <link rel="preload" href="./placeholders/small.jpg" as="image">
+    
+    <script src="js/responsiveImgAttrs2.js" type="module" defer></script>
+    <script src="js/main.js" type="module" defer></script>
 </head>
 <body>
     <header class="pageHeader">
@@ -143,7 +152,6 @@
         </div>
     </footer>
 
-    <script src="js/responsiveImgAttrs2.js" type="module" defer></script>
-    <script src="js/main.js" type="module" defer></script>
+     
 </body>
 </html>

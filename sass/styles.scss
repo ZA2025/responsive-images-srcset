@@ -13,8 +13,8 @@ body {
     font-family: "Ruda", sans-serif;
 }
 img {
+    width: 100%;
     max-width: 100%;
-    width: auto;
     height: auto;
     display: block;
 }
@@ -82,6 +82,10 @@ h1 {
         flex-wrap: wrap;
         gap : 20px;
     }
+    &Item1 {
+        width: 100%;
+        height: auto;
+    }
     &List2 {
         list-style: none;
         padding: 0;
@@ -96,18 +100,6 @@ h1 {
         flex-grow: 1;
         @media screen and (min-width: 768px) {
             width: calc((100% - 20px) / 2);
-        }
-        img {
-            width: 100%;
-            height: auto;
-            // set the aspect ratio
-            
-            &::before {
-                content: "";
-                display: block;
-                padding-top: 100%;
-
-            }
         }
     }
 
@@ -128,11 +120,7 @@ h1 {
         }
         @media screen and (min-width: 1200px) {
             width: calc((100% - (80px)) / 3);
-            flex: 1;
-        }
-        img {
-            width: 100%;
-            height: auto;
+            //flex: 1;
         }
     }
 
@@ -153,14 +141,10 @@ h1 {
         
         @media screen and (min-width: 768px) {
             width: calc(((100% - 40px) - 60px) / 4);
-            flex: 1;
+            //flex: 1;
         }
         @media screen and (min-width: 1200px) {
             width: calc((100% - 60px) / 4);
-        }
-        img {
-            width: 100%;
-            height: auto;
         }
     }
     &List5 {
@@ -176,11 +160,6 @@ h1 {
     &Item5 { 
         flex-basis: calc(50% - 20px); 
         flex-grow: 1;
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
     }
     &Figure {
         margin-top: 10px;
