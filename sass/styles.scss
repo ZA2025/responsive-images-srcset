@@ -84,7 +84,9 @@ h1 {
     }
     &Item1 {
         width: 100%;
+        flex-basis: 100%; 
         height: auto;
+        
     }
     &List2 {
         list-style: none;
@@ -119,7 +121,7 @@ h1 {
             width: calc((100% - 40px) / 3);
         }
         @media screen and (min-width: 1200px) {
-            width: calc((100% - (80px)) / 3);
+            width: calc((100% - 40px) / 3);
             //flex: 1;
         }
     }
