@@ -30,13 +30,17 @@ h1 {
 }
 code {
     border-radius: 3px;
-    background-color: #75614f;
+    background-color: #bd819b;
     padding: 0 4px;
     word-break: break-word;
     overflow-wrap: anywhere;
     color: #ffffff;
     font-family: "Ruda", sans-serif;
     font-style: normal;
+    line-height: 1.5;
+    @media screen and (min-width: 1280px) {
+        line-height: 2;
+    }
 }
 .pageHeader {
     width: 100%;
@@ -73,6 +77,10 @@ code {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    @media screen and (min-width: 1280px) {
+        padding: 20px 0;
+
+    }
     &Title {
         font-size: 20px;
         padding-bottom: 20px;
